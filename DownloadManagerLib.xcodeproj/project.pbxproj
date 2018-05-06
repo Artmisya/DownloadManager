@@ -13,6 +13,10 @@
 		F9B03E58209F7B0D000E5735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B03E57209F7B0D000E5735 /* Assets.xcassets */; };
 		F9B03E5B209F7B0D000E5735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B03E59209F7B0D000E5735 /* LaunchScreen.storyboard */; };
 		F9B03E66209F7B0D000E5735 /* DownloadManagerLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B03E65209F7B0D000E5735 /* DownloadManagerLibTests.swift */; };
+		F9B03E79209F7B7F000E5735 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B03E76209F7B7F000E5735 /* DownloadManager.swift */; };
+		F9B03E7A209F7B7F000E5735 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B03E77209F7B7F000E5735 /* Request.swift */; };
+		F9B03E7B209F7B7F000E5735 /* DownloadedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B03E78209F7B7F000E5735 /* DownloadedObject.swift */; };
+		F9B03E7D209F7B90000E5735 /* DownloadManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B03E7C209F7B90000E5735 /* DownloadManagerConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		F9B03E61209F7B0D000E5735 /* DownloadManagerLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadManagerLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B03E65209F7B0D000E5735 /* DownloadManagerLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManagerLibTests.swift; sourceTree = "<group>"; };
 		F9B03E67209F7B0D000E5735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B03E76209F7B7F000E5735 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		F9B03E77209F7B7F000E5735 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		F9B03E78209F7B7F000E5735 /* DownloadedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadedObject.swift; sourceTree = "<group>"; };
+		F9B03E7C209F7B90000E5735 /* DownloadManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManagerConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,9 @@
 		F9B03E4F209F7B0B000E5735 /* DownloadManagerLib */ = {
 			isa = PBXGroup;
 			children = (
+				F9B03E72209F7B2F000E5735 /* Controllers */,
+				F9B03E71209F7B29000E5735 /* Model */,
+				F9B03E70209F7B15000E5735 /* View */,
 				F9B03E50209F7B0B000E5735 /* AppDelegate.swift */,
 				F9B03E52209F7B0B000E5735 /* ViewController.swift */,
 				F9B03E54209F7B0B000E5735 /* Main.storyboard */,
@@ -94,6 +105,55 @@
 				F9B03E67209F7B0D000E5735 /* Info.plist */,
 			);
 			path = DownloadManagerLibTests;
+			sourceTree = "<group>";
+		};
+		F9B03E70209F7B15000E5735 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9B03E71209F7B29000E5735 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9B03E73209F7B38000E5735 /* DownloadManager */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9B03E72209F7B2F000E5735 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F9B03E73209F7B38000E5735 /* DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				F9B03E75209F7B46000E5735 /* Classes */,
+				F9B03E74209F7B40000E5735 /* Constants */,
+			);
+			path = DownloadManager;
+			sourceTree = "<group>";
+		};
+		F9B03E74209F7B40000E5735 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F9B03E7C209F7B90000E5735 /* DownloadManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F9B03E75209F7B46000E5735 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F9B03E78209F7B7F000E5735 /* DownloadedObject.swift */,
+				F9B03E76209F7B7F000E5735 /* DownloadManager.swift */,
+				F9B03E77209F7B7F000E5735 /* Request.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9B03E53209F7B0B000E5735 /* ViewController.swift in Sources */,
+				F9B03E7B209F7B7F000E5735 /* DownloadedObject.swift in Sources */,
+				F9B03E7A209F7B7F000E5735 /* Request.swift in Sources */,
+				F9B03E7D209F7B90000E5735 /* DownloadManagerConstants.swift in Sources */,
+				F9B03E79209F7B7F000E5735 /* DownloadManager.swift in Sources */,
 				F9B03E51209F7B0B000E5735 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
